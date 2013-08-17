@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% from "_macros.html" import render_errorpage %}
+{% set page_title = "Error" %}
+
+{% block content %}
+    {{render_errorpage(error_code)}}
+{% endblock %}
+
+{% block javascripts %}
+    {{super()}}
+{% endblock %}
